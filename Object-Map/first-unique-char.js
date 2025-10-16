@@ -1,3 +1,4 @@
+//better time complexity
 var firstUniqChar = function(s){
      let freq = {}  
     // or  let map = new Map();
