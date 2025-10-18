@@ -16,7 +16,7 @@ array/
 
 ## 📚 Topics Covered
 - Arrays ✅  
-- Hash Tables 🔜  
+- Hash Tables ✅  
 - Linked Lists 🔜  
 - Stack & Queue 🔜  
 - Recursion 🔜  
