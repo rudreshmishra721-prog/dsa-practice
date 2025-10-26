@@ -20,6 +20,7 @@ array/
 - Linked Lists ✅  
 - Stack & Queue 🔜  
 - Recursion 🔜  
+- Math 🔜
 
 ---
 
