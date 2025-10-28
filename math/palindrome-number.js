@@ -6,8 +6,8 @@
     if(x < 0){
         return false
     }
-    let string = x.toString();
-    let reverse = str.split('').reverse().join('')
-     return string === reverse
+    let str = x.toString();
+    let rev = str.split('').reverse().join('')
+     return str === rev
 
 };
