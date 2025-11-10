@@ -12,11 +12,31 @@ class Linkedlist {
         value: value,
         next : null,
     }
+    
     this.tail.next = newnode;
     this.tail = newnode;
     this.length++;
     return this;
     }
+    prepend(value){
+        const newnode = {
+        value: value,
+        next : null,
+    }
+    newnode.next = this.head;
+    this.head = newnode;
+    this.length++;
+    return this;
+    }
+    printiList(){
+        const array = [];
+        let currnode = this.head;
+        while(currnode !== null){
+            array.push(currnode.value)
+            currnode  = currnode.next
+        }
+        return array
+    }  
      insert(index , value){
         if(index === 0){
             return this.prepend(value);
@@ -44,9 +64,17 @@ class Linkedlist {
             }
             return currentNode
         } 
+         remove(index){
+            const leader = this.traverseToIndex(index - 1)
+            const unwantedNode = leader.next;
+            leader.next = unwantedNode.next;
+            this.length--;
+            return this.printiList(); 
+        }
 }  
 const mylinkedlist = new Linkedlist(10)
 mylinkedlist.append(20)
 mylinkedlist.insert(0, 99);
 mylinkedlist.insert(3, 94);
+mylinkedlist.remove(2)
 console.log(mylinkedlist.printiList())
