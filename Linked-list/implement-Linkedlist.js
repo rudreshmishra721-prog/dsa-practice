@@ -74,6 +74,7 @@ class Linkedlist {
 }  
 const mylinkedlist = new Linkedlist(10)
 mylinkedlist.append(20)
+mylinkedlist.prepend(50)
 mylinkedlist.insert(0, 99);
 mylinkedlist.insert(3, 94);
 mylinkedlist.remove(2)
