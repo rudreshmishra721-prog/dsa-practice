@@ -31,7 +31,7 @@ class DoublyLinkedList {
         this.head.prev = newNode;
         this.head = newNode;
         this.length++;
-        return this;
+        return this
         
     }
     printList() {
@@ -43,8 +43,29 @@ class DoublyLinkedList {
       }
       return console.log(array);
     }
-    
+    insert(index, value){
+        if(index >= this.length){
+            console.log("yeas");
+            return this.append(value);
+        }
+        const newNode = {
+            value: value,
+            prev: null,
+            next: null,
+        };
+        const leader = this.TraverseToIndex(index - 1);
+        const follower = leader.next
+        leader.next = newNode;
+        newNode.prev = leader;
+        newNode.next = follower;
+        follower.prev = newNode;
+        this.length++
+
+        
+    }
+
 }
 
 let myDoublyLinkedlist = new DoublyLinkedList(10)
 console.log(myDoublyLinkedlist.append(20))
+console.log(myDoublyLinkedlist.prepand(220))
