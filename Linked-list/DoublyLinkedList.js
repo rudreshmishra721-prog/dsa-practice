@@ -21,6 +21,29 @@ class DoublyLinkedList {
         return this;
 
     }
+    prepand(value){
+        const newNode = {
+            value : value,
+            prev: null,
+            next: null,
+        };
+        newNode.next = this.head;
+        this.head.prev = newNode;
+        this.head = newNode;
+        this.length++;
+        return this;
+        
+    }
+    printList() {
+      const array = [];
+      let currentNode = this.head;
+      while (currentNode !== null) {
+        array.push(currentNode.value);
+        currentNode = currentNode.next;
+      }
+      return console.log(array);
+    }
+    
 }
 
 let myDoublyLinkedlist = new DoublyLinkedList(10)
