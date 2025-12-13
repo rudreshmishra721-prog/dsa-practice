@@ -64,7 +64,6 @@ class DoublyLinkedList {
         
     }
     traverseToIndex(index) {
-      //Check parameters
       let counter = 0;
       let currentNode = this.head;
       while (counter !== index) {
@@ -74,7 +73,6 @@ class DoublyLinkedList {
       return currentNode;
     }
     remove(index) {
-      // Check Parameters
       const leader = this.traverseToIndex(index - 1);
       const unwantedNode = leader.next;
       leader.next = unwantedNode.next;
