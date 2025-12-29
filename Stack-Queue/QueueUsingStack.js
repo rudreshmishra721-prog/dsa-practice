@@ -1,3 +1,5 @@
+// Implementing Queue using Stack
+
 class CrazyQueue {
     constructor() {
         this.first = [];
