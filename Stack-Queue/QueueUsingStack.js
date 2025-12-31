@@ -15,7 +15,7 @@ class CrazyQueue {
 
         this.last.push(value);
 
-        return this;
+        return console.log(this);
     }
 
     dequeue() {
@@ -27,7 +27,7 @@ class CrazyQueue {
 
         this.first.pop();
 
-        return this;
+        return console.log(this);
     }
 
     peek() {
@@ -35,7 +35,7 @@ class CrazyQueue {
             return this.first[this.first.length - 1];
         }
 
-        return this.last[0];
+        return console.log(this.last[0]);
     }
 }
 
