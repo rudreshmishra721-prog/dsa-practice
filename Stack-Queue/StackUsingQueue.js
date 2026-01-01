@@ -51,6 +51,8 @@ class StackUsingQueue {
 const stack = new StackUsingQueue();
 stack.push(10);
 stack.push(20);
+stack.push(30);
+
 console.log(stack.peek()); // 20
 console.log(stack.pop());  // 20
 console.log(stack.peek()); // 10
