@@ -36,7 +36,20 @@ class BinarySearchTree {
   } 
  }
   lookup(value) {
-    
+    if(!this.root){
+      return console.log (false);
+    }
+    let currentNode = this.root;
+    while(currentNode){
+      if(value < currentNode.value){
+        currentNode = currentNode.left;
+      }else if(value > currentNode.value){
+        currentNode = currentNode.right;
+      }else if(currentNode.value === value){
+        return console.log(currentNode);
+      }
+    }
+    return console.log (false);
   }
 
   remove(value) {
@@ -52,8 +65,9 @@ tree.insert(20);
 tree.insert(170);
 tree.insert(15);
 tree.insert(1);
-// tree.remove(170);
-JSON.stringify(traverse(tree.root));
+tree.lookup(171)
+// tree.remove(171);
+// JSON.stringify(traverse(tree.root));
 // console.log(tree.lookup(20));
 //     9
 //  4     20
