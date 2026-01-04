@@ -66,7 +66,7 @@ tree.insert(170);
 tree.insert(15);
 tree.insert(1);
 tree.lookup(171)
-// tree.remove(171);
+tree.remove(171);
 // JSON.stringify(traverse(tree.root));
 // console.log(tree.lookup(20));
 //     9
