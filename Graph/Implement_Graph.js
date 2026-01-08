@@ -1,3 +1,4 @@
+//undirected Graph
 class Graph {
     constructor(){
         this.numberOfNodes = 0;
