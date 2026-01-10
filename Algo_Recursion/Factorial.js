@@ -1,3 +1,4 @@
+//Iterative factorial implementation
 function FindFactorialItrative(number){
     let  answer = 1
     if( number === 2){
@@ -9,3 +10,13 @@ function FindFactorialItrative(number){
     console.log(answer); 
 }
 FindFactorialItrative(5);
+
+//Recursive factorial implementation
+function FindFactoriaRecursive(number){
+    if (number === 2){
+        return 2;
+    }
+
+   return number * FindFactoriaRecursive(number - 1);
+}
+console.log(FindFactoriaRecursive(5));
