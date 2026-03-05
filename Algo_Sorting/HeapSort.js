@@ -7,4 +7,7 @@ function heapSort(arr) {
   for (let i = Math.floor(n / 2) - 1; i >= 0; i--) {
     heapify(arr, n, i);
   }
+  for (let i = Math.floor(n / 2) - 1; i >= 0; i--) {
+    heapify(arr, n, i);
+  }
 }
